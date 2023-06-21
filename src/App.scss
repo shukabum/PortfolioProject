@@ -1,0 +1,17 @@
+@import '~loaders.css/src/animations/pacman.scss';
+.loader-active{
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width:100px;
+    top:35vh;
+    
+    left:47vw;
+    bottom:0;
+    align-items: center;
+    justify-content: center;
+    animation:fadeOut 1s 0.5s;
+    animation-fill-mode: forwards;
+
+
+} 

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hcontainer{
+    display: flex;
+    margin-top:5%;
+    margin-left: 10%;
+    opacity: 1;
+    font-family: monospace;
+    z-index: 1;
+    height:90vh;
+    
+    .text-zone{
+        opacity: 0;
+        animation:fadeIn 1s ease-in 0.6s;
+        animation-fill-mode: forwards;  
+        margin-top:10rem;
+        max-height:40vh;
+        font-size: 30px;
+        text-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+        .text{
+            color:rgba(255,255,255,0.6);
+            font-weight: 500;
+            font-size: 25px;
+            opacity: 0.7;
+        }
+        .myname{
+            color:wheat;
+            font-size: 50px;
+            font-weight: 900;
+            width:30rem;
+            font-family: 'M PLUS Code Latin', sans-serif;
+            &:hover{
+                color:#4db5ff;
+                cursor: pointer;
+            }  
+        }
+        .role{
+            font-size: 20px;
+            //font-family:'M PLUS Code Latin', sans-serif;
+            font-weight: 900;
+            color: rgba(255,255,255,0.6);
+            opacity:0.5;
+        }
+    }
+}
+.cta{
+    margin-top:3rem;
+    font-size: 15px;
+    a{
+        transition: all 0.1s ease-in-out;
+    }
+    a:hover{
+        color: #ffd700;
+        
+    }
+}
+.btn{
+    width:max-content;
+    display: inline-block;
+    color:rgba(77,181,255,0.4);
+    padding:0.75rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    //font-family:'M PLUS Code Latin', sans-serif ;
+    font-weight: 900;
+    border:2px solid #4db5ff;
+    &:hover{
+        border-color:transparent;
+        background-color: #254155;
+    }
+}
+.btn-primary{
+    width:max-content;
+    display: inline-block;
+    color:#ffd700;
+    padding:0.75rem 1.2rem;
+    border-radius: 1rem;
+    background-color: linear-gradient(#091822,transparent);
+    //font-family:'M PLUS Code Latin', sans-serif ;
+    
+    font-weight: 900;
+    cursor: pointer;
+    border:2px solid #4db5ff;
+    &:hover{
+        border-color:transparent;
+        background-color: #4db5ff;  
+        
+    }
+}
+@media screen and (max-width:400px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+    .hcontainer{
+        transition: all ease ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        
+        
+        .text-zone{
+            display: block;
+            justify-content: center;
+            align-items: center;
+           // margin-left: 2%;
+            margin-top: -40%;
+        
+            .myname{
+                width:17rem;
+            }
+        }
+
+        
+
+    }
+}

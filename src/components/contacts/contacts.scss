@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@1,100&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cedarville+Cursive&family=Lato:ital,wght@1,100&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wholebox{
+    display: grid;
+    width:90vw;
+    margin-top:5%;
+    margin-left: 5vw;
+    justify-content: center;
+    animation: fadeInUp 0.5s 1s;
+    animation-fill-mode: forwards;
+    .contact-form{
+      opacity: 0;
+       width:55vw;
+       margin-top:1rem;
+       height: 60vh;
+       display: flex;
+       justify-content:center;
+       align-items: center;
+       //border-radius: 40px;
+       //border:2px solid black;
+       background: url("../../assets/images/postcardback.jpg");
+       background-repeat:no-repeat;
+       background-size: cover;
+       box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+       animation: fadeInDown 0.5s 1s;
+       animation-fill-mode: forwards;
+       .stamp{
+         position: absolute;
+         left: 5%;
+         top:2%;
+       }
+       .stamp2{
+         position: absolute;
+         right: 5%;
+         top:2%;
+       }
+       ul{
+          // padding:2px;
+           display: flex;
+           justify-content: left;
+           // background-color: red;
+           li{
+               padding:20px;     
+               overflow:auto;
+               
+   
+               input{
+                   border: none;
+                   width: 100%;
+                   //border-radius: 10px;
+                   
+                   background-color: transparent;
+                  
+                  
+                   font-family: 'Cedarville Cursive', cursive;
+                   font-weight: 900;
+                   color:#2c2c6c;
+                   font-size: 20px;
+                   border-bottom: solid #293462;  
+                  
+               }
+               textarea{
+                   min-height: 1rem;
+                   min-width: 10rem;
+                   max-width:20rem;
+                   //margin-top: 5rem;
+                   //border:3px solid #2c2c6c ;
+                   //border-radius: 2rem;
+                   background-color: transparent;
+                  // opacity: 0.6;     
+                   font-family: 'Cedarville Cursive', cursive;
+                   color:#2c2c6c;
+                   font-size: 20px;
+                   font-weight: 900;
+                   text-shadow:1px 0px #090808;
+                   border-bottom: solid #293462;  
+                  
+               }
+            
+           
+           }
+          
+        
+       }
+       .flat-button{
+           
+           background-color: aquamarine;
+           text-decoration: none;
+           padding: 20px;
+           float: right;
+           margin-top:2rem;
+           &:hover{
+               cursor: pointer;
+               background-color: rgba(77,181,255,0.4);
+           }
+       }
+   
+   }
+}
+
+.title{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 20px;
+    font-weight:600;
+    color:wheat;
+    opacity: 0;
+    
+    animation: fadeInUp 0.5s 1s;
+    animation-fill-mode: forwards;
+    &:hover{
+        color:#ffd700;
+
+    }
+    text-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width:400px){
+    .wholebox{
+       // background: url("../../assets/images/marton-adam-marton-tomandjerry-jpg.jpg ");
+        margin:auto;
+        top: auto;
+        left: auto;
+
+      .contact-form{
+        width: 95vw;
+        height: 81vh;
+        border-radius: 20px;
+        .stamp{
+          position: absolute;
+          left: 5%;
+          top:2%;
+        }
+        .stamp2{
+          position: absolute;
+          right:6%;
+          top:2%;
+          
+        }
+       
+        ul{
+          display: block;
+          margin:auto
+         
+
+        }
+        .sendbut{
+          //margin-bottom: 50%;
+          top:95%;
+          left: 40%;
+
+        }
+      }   
+   }   
+}
+.sendbut{
+    position: absolute;
+    top:85%;
+    left: 22%;
+    font-family: 'Allura', cursive;
+    text-shadow: 1px black;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    display: flex;
+    justify-content: right;
+      //border: 5px solid #f9c23c;
+      padding: 15px;
+      background-color: transparent;
+      border-radius: 50px;
+      cursor: pointer;
+      overflow: hidden;
+      svg{
+        font-size: 2rem;
+      }
+      p{
+       // text-transform: uppercase;
+        text-align: center;
+        color:rgb(20, 129, 135);
+        font-weight: 900;
+        font-size: 30px;
+        //margin-left: 0px;
+        text-shadow:1px 0px #090808;
+
+        transition: all 0.5s ease;
+        
+           
+      }
+      .send{
+        position: absolute;
+        top:15px;
+        left: 20px;
+        color:rgba(10, 26, 120, 0.741);
+        transition: all 0.5s ease;
+      }
+      .send2{
+        position: absolute;
+        top:80px;
+        left: 20px;
+        color: #2d0707;
+        transition: all 0.5s ease;
+      }
+      &:hover{
+        p{
+            color: #441a1a;
+            transition: all 0.5s ease;
+            animation: move 0.5s linear 1s forwards;
+          }
+        }
+    
+}
+.sendbut:hover{
+    //background: #f9c23c;
+    transition: all 0.5s ease;
+}
+.sendbut:hover .send{
+    top: -50px;
+    transition: all 0.5s ease;
+}
+.sendbut:hover .send2{
+    top: 15px;
+    transition: all 0.5s ease;
+    animation: orbit 1s linear 1s forwards;
+}
+@keyframes sending{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translate(40px, -60px);
+  }
+}
+
+@keyframes move{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-18px);
+  }
+}
+
+@keyframes orbit {
+    0% {
+      transform: rotate3d(1,0,0,0deg) translateZ(60px) scale3d(1,1,1);
+      animation-timing-function: ease-in;
+    }
+    10% {
+      z-index: 3;
+      transform: rotate3d(1,.6,0,-10deg) translateZ(60px) scale3d(1,1,1);
+      animation-timing-function: ease-out;
+    }
+    20% {
+      z-index: 3;
+      transform: rotate3d(1,.6,0,30deg) translateZ(60px) scale3d(1,1,1);
+      animation-timing-function: ease-out;
+    }
+    30% {
+      z-index: 3;
+      transform: rotate3d(1,.6,0,35deg) translateZ(60px) scale3d(1,1,1);
+    }
+    40% {
+      z-index: 1;
+      transform: rotate3d(1,.6,0,120deg) translateZ(60px)  scale3d(.7,.7,1);
+    }
+    70% {
+      z-index: 1;
+      transform: rotate3d(1,.6,0,240deg) translateZ(60px)  scale3d(.7,.7,1);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      z-index: 3;
+      transform: rotate3d(1,0,0,360deg) translateZ(60px)  scale3d(1,1,1);
+    }
+  }
